@@ -1,0 +1,53 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\GetIO.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file GetIO.h at line 4
+
+* GetIO 
+
+	CON(5)	=UARTBUFLEN
+	CON(5)	=DROP
+	CON(5)	=DUP#0=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\0\
+	CON(5)	=SEMI
+* File	GetIO.h	15
+	CON(5)	=DOCOL
+	CON(5)	=GETSERIAL
+	CON(5)	=DROP
+	CON(5)	=CK1NOLASTWD
+	CON(5)	=DUPTYPECSTR?
+	CON(5)	=NcaseTYPEERR
+* Seleccion de ODO 
+	CON(5)	=SetMenu
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=NTHCOMPDROP
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	8
+	CON(5)	=DOBINT
+	CON(5)	13
+	CON(5)	=SUB$
+	CON(5)	=SEMI
+* ODO2 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=1_#1-SUB$
+	CON(5)	=SEMI
+* ODO1 
+	CON(5)	=SEMI
+

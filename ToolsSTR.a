@@ -1,0 +1,89 @@
+* File	ToolsSTR.s	1
+* RPL
+* File	ToolsSTR.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Palparse.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	ToolsSTR.s	3
+
+* File	ToolsSTR.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file ToolsSTR.s at line 4
+
+* STR2 
+*********************************
+* DOSTR> Sin evaluacion		*
+* $ -> 
+*********************************
+* File	ToolsSTR.s	11
+=STR>
+* File	ToolsSTR.s	12
+	CON(5)	=DOCOL
+* File	ToolsSTR.s	13
+	CON(5)	=palparse
+	CON(5)	=DROP
+* File	ToolsSTR.s	14
+	CON(5)	=SEMI
+* File	ToolsSTR.s	15
+
+* File	ToolsSTR.s	16
+* DelCR 
+*********************************
+* Borra caracter		*
+* $ -> $'			*
+*********************************
+* File	ToolsSTR.s	21
+=DelCR
+* File	ToolsSTR.s	22
+	CON(5)	=DOCOL
+* File	ToolsSTR.s	23
+	CON(5)	=DUPNULL$?
+* File	ToolsSTR.s	24
+	CON(5)	=?SEMI
+* File	ToolsSTR.s	25
+	CON(5)	=DUPLEN$
+* File	ToolsSTR.s	26
+	CON(5)	=1_#1-SUB$
+* File	ToolsSTR.s	27
+	CON(5)	=SEMI
+* File	ToolsSTR.s	28
+
+* File	ToolsSTR.s	29
+* Expnd$ 
+*********************************
+* Format String (Clear)		*
+* $ # -> $			*
+*********************************
+* File	ToolsSTR.s	34
+=Expnd$
+* File	ToolsSTR.s	35
+	CON(5)	=DOCOL
+* File	ToolsSTR.s	36
+	CON(5)	=SWAP
+* File	ToolsSTR.s	37
+	CON(5)	=DUPLEN$
+* File	ToolsSTR.s	38
+	CON(5)	=ROTSWAP
+* File	ToolsSTR.s	39
+	CON(5)	=#-
+* File	ToolsSTR.s	40
+	CON(5)	=Blank$
+* File	ToolsSTR.s	41
+	CON(5)	=SWAP&$
+* File	ToolsSTR.s	42
+	CON(5)	=SEMI
+* File	ToolsSTR.s	43
+

@@ -1,0 +1,316 @@
+* File	MsgBox.s	1
+* RPL
+* File	MsgBox.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\MsgBox.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	MsgBox.s	3
+
+* File	MsgBox.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file MsgBox.s at line 4
+* File	MsgBox.s	6
+* File	MsgBox.s	7
+
+* File	MsgBox.s	8
+* Msg 
+*********************************
+* Mensaje de Alerta		*
+* $1 $2 ->			*
+*********************************
+* File	MsgBox.s	13
+=Msg
+* File	MsgBox.s	14
+	CON(5)	=DOCOL
+* File	MsgBox.s	15
+	CON(5)	=DOROMP
+	CON(6)	=~DBox
+* Clear 
+* File	MsgBox.s	16
+	CON(5)	=DOROMP
+	CON(3)	#B0
+	CON(3)	#85
+* Grob Alarm 
+* File	MsgBox.s	17
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=GROB!
+* Disp GAlarm 
+* File	MsgBox.s	18
+	CON(5)	=DOROMP
+	CON(6)	=~2FNT1
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	30
+	CON(5)	=DOBINT
+	CON(5)	28
+	CON(5)	=GROB!
+* Disp Strings 
+* File	MsgBox.s	19
+	CON(5)	=DOROMP
+	CON(6)	=~2FNT1
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	30
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=GROB!
+* File	MsgBox.s	20
+	CON(5)	=SEMI
+* File	MsgBox.s	21
+
+* File	MsgBox.s	22
+* DBox 
+*********************************
+* Display Box			*
+* ->				*
+*********************************
+* File	MsgBox.s	27
+=DBox
+* File	MsgBox.s	28
+	CON(5)	=DOCOL
+* File	MsgBox.s	29
+	CON(5)	=DOROMP
+	CON(3)	#B3
+	CON(3)	#5C
+* Grob Box 
+* File	MsgBox.s	30
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	16
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=GROB!
+* File	MsgBox.s	31
+	CON(5)	=SEMI
+* File	MsgBox.s	32
+
+* File	MsgBox.s	33
+* DLine1 
+*********************************
+* Disp Line 1			*
+* $ ->				*
+*********************************
+* File	MsgBox.s	38
+=DLine1
+* File	MsgBox.s	39
+	CON(5)	=DOCOL
+* File	MsgBox.s	40
+	CON(5)	=DOROMP
+	CON(6)	=~BlankGrob
+* Disp Blank Grob 
+* File	MsgBox.s	41
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=GROB!
+* File	MsgBox.s	42
+	CON(5)	=DOROMP
+	CON(6)	=~2FNT1
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=GROB!
+* Disp String 
+* File	MsgBox.s	43
+	CON(5)	=SEMI
+* File	MsgBox.s	44
+
+* File	MsgBox.s	45
+* DLine2 
+*********************************
+* Disp Line 2			*
+* $ ->				*
+*********************************
+* File	MsgBox.s	50
+=DLine2
+* File	MsgBox.s	51
+	CON(5)	=DOCOL
+* File	MsgBox.s	52
+	CON(5)	=DOROMP
+	CON(6)	=~BlankGrob
+* Disp Blank Grob 
+* File	MsgBox.s	53
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	28
+	CON(5)	=GROB!
+* File	MsgBox.s	54
+	CON(5)	=DOROMP
+	CON(6)	=~2FNT1
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	28
+	CON(5)	=GROB!
+* Disp String 
+* File	MsgBox.s	55
+	CON(5)	=SEMI
+* File	MsgBox.s	56
+
+* File	MsgBox.s	57
+* DLine3 
+*********************************
+* Disp Line 3			*
+* $ ->				*
+*********************************
+* File	MsgBox.s	62
+=DLine3
+* File	MsgBox.s	63
+	CON(5)	=DOCOL
+* File	MsgBox.s	64
+	CON(5)	=DOROMP
+	CON(6)	=~BlankGrob
+* Disp Blank Grob 
+* File	MsgBox.s	65
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	34
+	CON(5)	=GROB!
+* File	MsgBox.s	66
+	CON(5)	=DOROMP
+	CON(6)	=~2FNT1
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	19
+	CON(5)	=DOBINT
+	CON(5)	34
+	CON(5)	=GROB!
+* Disp String 
+* File	MsgBox.s	67
+	CON(5)	=SEMI
+* File	MsgBox.s	68
+
+* File	MsgBox.s	69
+* DoERR 
+*********************************
+* Mensaje de Error		*
+* $ ->				*
+*********************************
+* File	MsgBox.s	74
+=DoERR
+* File	MsgBox.s	75
+	CON(5)	=DOCOL
+* File	MsgBox.s	76
+	CON(5)	=DOCSTR
+	CON(5)	17
+	NIBASC	\Error:\
+* File	MsgBox.s	77
+	CON(5)	=SWAP
+	CON(5)	=DOROMP
+	CON(6)	=~Msg
+* File	MsgBox.s	78
+	CON(5)	=ERRBEEP
+* File	MsgBox.s	79
+	CON(5)	=SEMI
+* File	MsgBox.s	80
+
+* File	MsgBox.s	81
+* 2LCD 
+*********************************
+* RESTORE LCD			*
+* Grob -> 			*
+*********************************
+* File	MsgBox.s	86
+=2LCD
+* File	MsgBox.s	87
+	CON(5)	=DOCOL
+* File	MsgBox.s	88
+	CON(5)	=ABUFF
+* File	MsgBox.s	89
+	CON(5)	=SWAP
+* File	MsgBox.s	90
+	CON(5)	=ZEROZERO
+* File	MsgBox.s	91
+	CON(5)	=CKGROBFITS
+* File	MsgBox.s	92
+	CON(5)	=4ROLL
+* File	MsgBox.s	93
+	CON(5)	=UNROT
+* File	MsgBox.s	94
+	CON(5)	=GROB!
+* File	MsgBox.s	95
+	CON(5)	=SEMI
+* File	MsgBox.s	96
+
+* File	MsgBox.s	97
+* BlankGrob 
+* File	MsgBox.s	98
+=BlankGrob
+* File	MsgBox.s	99
+* ASSEMBLE
+* File	MsgBox.s	100
+	CON(5)	=DOGROB
+* File	MsgBox.s	101
+	REL(5)	end
+* File	MsgBox.s	102
+	CON(5)	6
+* File	MsgBox.s	103
+	CON(5)	80
+* File	MsgBox.s	104
+	NIBHEX	000000
+* File	MsgBox.s	105
+	NIBHEX	000000
+* File	MsgBox.s	106
+	NIBHEX	000000
+* File	MsgBox.s	107
+	NIBHEX	000000
+* File	MsgBox.s	108
+	NIBHEX	000000
+* File	MsgBox.s	109
+	NIBHEX	000000
+* File	MsgBox.s	110
+	NIBHEX	000000
+* File	MsgBox.s	111
+	NIBHEX	000000
+* File	MsgBox.s	112
+	NIBHEX	000000
+* File	MsgBox.s	113
+	NIBHEX	000000
+* File	MsgBox.s	114
+	NIBHEX	000000
+* File	MsgBox.s	115
+	NIBHEX	000000
+* File	MsgBox.s	116
+	NIBHEX	000000
+* File	MsgBox.s	117
+	NIBHEX	000000
+* File	MsgBox.s	118
+	NIBHEX	000000
+* File	MsgBox.s	119
+	NIBHEX	000000
+* File	MsgBox.s	120
+	NIBHEX	000000
+* File	MsgBox.s	121
+	NIBHEX	000000
+* File	MsgBox.s	122
+	NIBHEX	000000
+* File	MsgBox.s	123
+	NIBHEX	000000
+* File	MsgBox.s	124
+end

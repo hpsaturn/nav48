@@ -1,0 +1,18 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\SysInit.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* SysInit 
+
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=DOFIX
+	CON(5)	=DOBINT
+	CON(5)	41
+	CON(5)	=SetSysFlag
+	CON(5)	=DOBINT
+	CON(5)	56
+	CON(5)	=ClrSysFlag
+	CON(5)	=DOOPENIO
+	CON(5)	=NoExitAction
+	CON(5)	=RECLAIMDISP
+	CON(5)	=ClrDA1IsStat

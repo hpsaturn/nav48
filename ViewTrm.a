@@ -1,0 +1,118 @@
+* File	ViewTrm.s	1
+* RPL
+* File	ViewTrm.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\ViewTrm.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+* File	ViewTrm.s	3
+
+* File	ViewTrm.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file ViewTrm.s at line 4
+* File	ViewTrm.s	6
+* File	ViewTrm.s	7
+
+* File	ViewTrm.s	8
+* ViewTrm 
+*********************************
+* ViewTramo			*
+* {{%{% % %}}..} # ->		*
+*********************************
+* File	ViewTrm.s	13
+
+* File	ViewTrm.s	14
+=ViewTr
+* File	ViewTrm.s	15
+	CON(5)	=DOCOL
+* File	ViewTrm.s	16
+
+* File	ViewTrm.s	17
+	CON(5)	=DOROMP
+	CON(6)	=~DBox
+* Clear 
+* File	ViewTrm.s	18
+	CON(5)	=DOSTD
+* No Aprox 
+* File	ViewTrm.s	19
+	CON(5)	=NTHCOMPDROP
+* saco tramo 
+* File	ViewTrm.s	20
+	CON(5)	=INCOMPDROP
+* rompo 
+* File	ViewTrm.s	21
+	CON(5)	=SWAP
+* File	ViewTrm.s	22
+	CON(5)	=THIRTYONE
+* File	ViewTrm.s	23
+	CON(5)	=THIRTY
+* File	ViewTrm.s	24
+	CON(5)	=DOROMP
+	CON(6)	=~DFNT2
+* Disp #Trm 
+* File	ViewTrm.s	25
+	CON(5)	=INCOMPDROP
+* Variables 
+* File	ViewTrm.s	26
+* DISP VARS 
+* File	ViewTrm.s	27
+	CON(5)	=TWO
+	CON(5)	=DOFIX
+* Aprox2 
+* File	ViewTrm.s	28
+	CON(5)	=DOCSTR
+	CON(5)	9
+	NIBASC	\T:\
+	CON(5)	=SWAP
+	CON(5)	=TOD>t$
+	CON(5)	=&$
+* File	ViewTrm.s	29
+	CON(5)	=DOCSTR
+	CON(5)	11
+	NIBASC	\   \
+	CON(5)	=SWAP&$
+	CON(5)	=7PUTLAM
+* File	ViewTrm.s	30
+	CON(5)	=DOCSTR
+	CON(5)	11
+	NIBASC	\V: \
+	CON(5)	=SWAP
+	CON(5)	=editdecomp$w
+	CON(5)	=&$
+* File	ViewTrm.s	31
+	CON(5)	=THIRTYONE
+	CON(5)	=TWENTYEIGHT
+* File	ViewTrm.s	32
+	CON(5)	=DOROMP
+	CON(6)	=~IFNT1
+* File	ViewTrm.s	33
+	CON(5)	=DOCSTR
+	CON(5)	11
+	NIBASC	\D: \
+	CON(5)	=SWAP
+	CON(5)	=editdecomp$w
+	CON(5)	=&$
+* File	ViewTrm.s	34
+	CON(5)	=THIRTYONE
+	CON(5)	=TWENTYTWO
+* File	ViewTrm.s	35
+	CON(5)	=DOROMP
+	CON(6)	=~IFNT1
+* File	ViewTrm.s	36
+	CON(5)	=THREE
+	CON(5)	=DOFIX
+* Return3Fix 
+* File	ViewTrm.s	37
+	CON(5)	=SEMI

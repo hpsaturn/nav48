@@ -1,0 +1,5 @@
+* ROMPART 200 end
+
+	CON(4)	0
+=SYSEND200
+	END

@@ -1,0 +1,78 @@
+* File	MakeFont.s	1
+* RPL
+* File	MakeFont.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\2FNT1.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	MakeFont.s	3
+
+* File	MakeFont.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file MakeFont.s at line 4
+
+* 2FNT1 
+* File	MakeFont.s	7
+=2FNT1
+*********************************
+* STRING2FONT1			*
+* Se usa un puntero de JAVA.	*
+* Any 2 Grob			*
+*********************************
+* File	MakeFont.s	13
+	CON(5)	=DOCOL
+* File	MakeFont.s	14
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=TRUE
+* File	MakeFont.s	15
+	CON(5)	=DOROMP
+	CON(3)	#38C
+	CON(3)	#A
+* File	MakeFont.s	16
+	CON(5)	=DROP
+* File	MakeFont.s	17
+	CON(5)	=SEMI
+* File	MakeFont.s	18
+
+* File	MakeFont.s	19
+* 2FNT2 
+* File	MakeFont.s	20
+=2FNT2
+*********************************
+* STRING2FONT2			*
+* Se usa un puntero de JAVA.	*
+* Any 2 Grob			*
+*********************************
+* File	MakeFont.s	26
+	CON(5)	=DOCOL
+* File	MakeFont.s	27
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=TRUE
+* File	MakeFont.s	28
+	CON(5)	=DOROMP
+	CON(3)	#38C
+	CON(3)	#A
+* File	MakeFont.s	29
+	CON(5)	=DROP
+* File	MakeFont.s	30
+	CON(5)	=SEMI
+* File	MakeFont.s	31
+
+* File	MakeFont.s	32
+
+* File	MakeFont.s	33
+

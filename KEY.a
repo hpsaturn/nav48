@@ -1,0 +1,1369 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\key.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file KEY.H at line 4
+
+* Key 
+	CON(5)	=GETTOUCH
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=DOLIST
+* Adicionar Tramo 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+* Si verbose es 
+	CON(5)	=#0=?SEMI
+* 1 entoces 
+	CON(5)	=NULL$
+* Clear 
+	CON(5)	=SINPUT!
+* Buffer 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=VISUAL!
+* Apago verbose 
+	CON(5)	=DOLCD>
+	CON(5)	=TLCD!
+* BkpLCD 
+	CON(5)	=DBox
+* Disp Caja 
+	CON(5)	=TINIT
+* Time Start 
+	CON(5)	=%0=
+	CON(5)	=ITE
+* es 0? 
+* Tiempo de Partida 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	6
+	CON(5)	=MODE!
+* Modo Enter E6 
+	CON(5)	=DOCSTR
+	CON(5)	41
+	NIBASC	\Tiempo de partida?\
+	CON(5)	=DLine1
+	CON(5)	=SEMI
+* Adicion de Tramos 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* Modo Enter E0 
+	CON(5)	=DOCSTR
+	CON(5)	41
+	NIBASC	\Distancia? [X=ENT]\
+	CON(5)	=DLine1
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	1
+*********************************
+* File	KEY.H	40
+* VIEW 
+	CON(5)	=DOCOL
+	CON(5)	=TDATA
+* Si DATA esta 
+	CON(5)	=LENCOMP
+* llena -> 
+	CON(5)	=#0=?SEMI
+* continue.. 
+	CON(5)	=SetMenu
+* Extrac MODE 
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=NTHCOMPDROP
+* -> FlagMode 
+
+* ViewMode: 
+* T: Delete Tramo MODE 
+* F: View   Tramo MODE 
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClearInput 
+	CON(5)	=DOCSTR
+	CON(5)	31
+	NIBASC	\Borrar Tramo?\
+	CON(5)	=NULL$
+	CON(5)	=Msg
+* Alert 
+	CON(5)	=DOBINT
+	CON(5)	11
+	CON(5)	=MODE!
+* DelEntMode 
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=TRUE
+* ViewMode 
+	CON(5)	=DOBINT
+	CON(5)	3
+* Pos VectMode 
+	CON(5)	=SetMenu
+* VectMode 
+	CON(5)	=PUTLIST
+* Store Flag 
+	CON(5)	=SetMenu!
+* Save Vector 
+
+	CON(5)	=VTRM
+	CON(5)	=#0=
+	CON(5)	=IT
+* Si VTRM=0 -> 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VTRM!
+	CON(5)	=SEMI
+* activo ViewTr 1 
+	CON(5)	=DOLCD>
+	CON(5)	=TLCD!
+* BkpLCD 
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=DOCSTR
+	CON(5)	11
+	NIBASC	\DEL\
+* EraseLabel 
+	CON(5)	=DoLabel
+* SetLabel 
+	CON(5)	=DBox
+* Disp Caja 
+	CON(5)	=TDATA
+* Data 
+	CON(5)	=VTRM
+* Tramo2View 
+	CON(5)	=ViewTr
+* View Tramo 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=VISUAL!
+* Apago verbose 
+	CON(5)	=DOBINT
+	CON(5)	10
+	CON(5)	=MODE!
+* Mode Key 
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	2
+*********************************
+* File	KEY.H	80
+* ODO 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	44
+* columna 
+	CON(5)	=SetMenu
+	CON(5)	=DUP
+* {}{} 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=NTHCOMPDROP
+* {}F 
+	CON(5)	=NOT
+	CON(5)	=DUPROT
+* TT{} 
+	CON(5)	=ONESWAP
+* TT1{} 
+	CON(5)	=PUTLIST
+	CON(5)	=SetMenu!
+* Save Flag 
+	CON(5)	=ITE
+* Escojo 
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\ODO2\
+* Etiqueta 
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\ODO1\
+	CON(5)	=DoLabel
+* la creo 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	3
+*********************************
+* File	KEY.H	95
+* Units 
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	66
+* columna 
+	CON(5)	=SetMenu
+	CON(5)	=DUP
+* #{}{} 
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=NTHCOMPDROP
+* #{}1 
+	CON(5)	=#1+DUP
+* #{}22 
+	CON(5)	=DUP#1=
+* #{}22F 
+	CON(5)	=ITE
+* Escojo 
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOCSTR
+	CON(5)	13
+	CON(2)	#8D
+	NIBASC	\HMS\
+	CON(5)	=SEMI
+* Etiqueta 
+	CON(5)	=DOCOL
+	CON(5)	=#2=
+	CON(5)	=ITE
+	CON(5)	=DOCSTR
+	CON(5)	13
+	CON(2)	#8D
+	NIBASC	\SEG\
+	CON(5)	=DOCOL
+	CON(5)	=DROPZERO
+	CON(5)	=DOCSTR
+	CON(5)	9
+	CON(2)	#8D
+	NIBASC	\H\
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+* #{}0$ 
+	CON(5)	=UNROTSWAP
+* #$0{} 
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=SWAP
+* #$02{} 
+	CON(5)	=PUTLIST
+	CON(5)	=SetMenu!
+* Save Flag 
+	CON(5)	=DoLabel
+* la creo 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	4
+*********************************
+* File	KEY.H	116
+* ReloadKey 
+	CON(5)	=DOCOL
+	CON(5)	=TINIT
+	CON(5)	=COERCE
+* Verificacion 
+	CON(5)	=#0=?SEMI
+* NO Start 
+	CON(5)	=TDATA
+* TempDATA 
+	CON(5)	=DUPNULL{}?
+* No DATA? 
+	CON(5)	=ITE
+	CON(5)	=DROPTRUE
+* No Seguir 
+	CON(5)	=FALSE
+* Seguir 
+	CON(5)	=?SEMI
+	CON(5)	=INNERCOMP
+* Preparo para 
+	CON(5)	=reversym
+* DoVTIME 
+	CON(5)	=TINIT
+	CON(5)	=ONE{}N
+* Init VTIME 
+	CON(5)	=DoVTIM
+* CalcVTime 
+	CON(5)	=VTIME!
+* Save VTIME 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	5
+*********************************
+* File	KEY.H	134
+* Ajuste KI 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+* Si verbose es 
+	CON(5)	=#0=?SEMI
+* 1 entoces 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClrBuffer 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=VISUAL!
+* Apago verbose 
+	CON(5)	=DOLCD>
+	CON(5)	=TLCD!
+* BkpLCD 
+	CON(5)	=DBox
+* Disp Caja 
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=MODE!
+* Modo Enter E7 
+	CON(5)	=DOCSTR
+	CON(5)	25
+	NIBASC	\Ajuste KI?\
+	CON(5)	=DLine1
+* Msg 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	24
+*********************************
+* File	KEY.H	148
+* Navegacion Pura 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+* Si verbose es 
+	CON(5)	=#0=?SEMI
+* 1 entoces 
+	CON(5)	=TOUT
+	CON(5)	=%0=
+* Para no ÷ 
+	CON(5)	=?SEMI
+* por 0 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClrBuffer 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=VISUAL!
+* Apago verbose 
+	CON(5)	=DOLCD>
+	CON(5)	=TLCD!
+* BkpLCD 
+	CON(5)	=DBox
+* Disp Caja 
+	CON(5)	=DOBINT
+	CON(5)	8
+	CON(5)	=MODE!
+* Modo Enter E7 
+	CON(5)	=DOCSTR
+	CON(5)	39
+	NIBASC	\!NAVEGACION PURA!\
+	CON(5)	=DOCSTR
+	CON(5)	25
+	NIBASC	\Velocidad?\
+	CON(5)	=Msg
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	14
+*********************************
+* File	KEY.H	165
+* Puesto de Control 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+* Si verbose es 
+	CON(5)	=#0=?SEMI
+* 1 entoces 
+	CON(5)	=DOLCD>
+	CON(5)	=TLCD!
+* BkpLCD 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClrBuffer 
+	CON(5)	=DOCSTR
+	CON(5)	41
+	NIBASC	\Puesto de Control.\
+	CON(5)	=DOCSTR
+	CON(5)	23
+	NIBASC	\Salvando\
+	CON(2)	#1F
+	CON(5)	=Msg
+
+* CREACION DEL REPORTE 
+
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	12
+	NIBASC	\PControl.dat\
+* $DATA 
+	CON(5)	=DUP
+	CON(5)	=TRCL
+* Tag $ 
+	CON(5)	=NEWLINE$&$
+* Linea Nueva 
+	CON(5)	=TOD
+	CON(5)	=TOD>t$
+* Tiempo 
+	CON(5)	=SPACE$
+	CON(5)	=&$
+* separacion 
+	CON(5)	=TRMA
+	CON(5)	=#>$
+	CON(5)	=&$
+* Tramo actual 
+	CON(5)	=&$
+* Anexo a Data 
+	CON(5)	=SWAP
+	CON(5)	=SaveT
+* Guardo $Data 
+
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* RestoreLCD 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	15
+*********************************
+* File	KEY.H	190
+* Enter 
+*|| Reading from D:\devel\HP\devel\NAV48\EnterKey.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\EnterKey.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file D:\devel\HP\devel\NAV48\EnterKey.h at line 4
+
+* EnterKey 
+
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+	CON(5)	=#0=
+	CON(5)	=NOT?SEMI
+	CON(5)	=MODE
+* Determina estado actual 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	37
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=TKI!
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=STR2
+	CON(5)	=TKI!
+	CON(5)	=SEMI
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+	CON(5)	=DOCSTR
+	CON(5)	41
+	NIBASC	\Velocidad? [X=ENT]\
+	CON(5)	=DLine1
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=#=casedrop
+* $VL->, D$HI? 
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=TVL!
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=STR2
+	CON(5)	=TVL!
+	CON(5)	=SEMI
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+	CON(5)	=DOCSTR
+	CON(5)	31
+	NIBASC	\Time? [X=ENT]\
+	CON(5)	=DLine1
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	57
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=THI!
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+* Conversion de unidades 
+* de tiempo. 
+	CON(5)	=STR2
+* % 
+	CON(5)	=SetMenu
+* %{} 
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=NTHCOMPDROP
+* %# 
+	CON(5)	=DUP#0=ITE
+* H? 
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=%>HMS
+	CON(5)	=SEMI
+* H2HMS 
+	CON(5)	=DOCOL
+	CON(5)	=#2=
+	CON(5)	=NOT?SEMI
+* Seg? 
+	CON(5)	=DOREAL
+	NIBHEX	300
+	NIBHEX	000000000063
+	NIBHEX	0
+	CON(5)	=%/
+	CON(5)	=%>HMS
+* S2HMS 
+	CON(5)	=SEMI
+	CON(5)	=THI!
+	CON(5)	=SEMI
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+	CON(5)	=TKI
+	CON(5)	=TVL
+	CON(5)	=THI
+	CON(5)	=DOBINT
+	CON(5)	0
+* Numero de variables X 
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=DO
+	CON(5)	=SWAP
+	CON(5)	=TYPEBINT?
+	CON(5)	=IT
+	CON(5)	=#1+
+	CON(5)	=LOOP
+	CON(5)	=DUP#0=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=DOCSTR
+	CON(5)	45
+	NIBASC	\Maximo 2 incognitas!\
+	CON(5)	=DoERR
+	CON(5)	=DOBINT
+	CON(5)	5
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=#1=
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+* RESOLUCION DE VARIABLES 
+	CON(5)	=DOSTD
+* Standard 
+	CON(5)	=TKI
+	CON(5)	=TYPEBINT?
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=THI
+	CON(5)	=%HMS>
+	CON(5)	=TVL
+	CON(5)	=%*
+	CON(5)	=TKI!
+	CON(5)	=SEMI
+	CON(5)	=TVL
+	CON(5)	=TYPEBINT?
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=TKI
+	CON(5)	=THI
+	CON(5)	=%HMS>
+	CON(5)	=%/
+	CON(5)	=TVL!
+	CON(5)	=SEMI
+	CON(5)	=THI
+	CON(5)	=TYPEBINT?
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=TKI
+	CON(5)	=TVL
+	CON(5)	=%/
+	CON(5)	=%>HMS
+	CON(5)	=THI!
+	CON(5)	=SEMI
+* Respuertas 
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\KI: \
+	CON(5)	=TKI
+	CON(5)	=editdecomp$w
+	CON(5)	=&$
+	CON(5)	=DLine1
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\VL: \
+	CON(5)	=TVL
+	CON(5)	=editdecomp$w
+	CON(5)	=&$
+	CON(5)	=DLine2
+	CON(5)	=DOCSTR
+	CON(5)	11
+	NIBASC	\HI:\
+	CON(5)	=THI
+	CON(5)	=TOD>t$
+	CON(5)	=&$
+	CON(5)	=DLine3
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=DOFIX
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=DOCSTR
+	CON(5)	37
+	NIBASC	\Navegacion Pura?\
+	CON(5)	=DOCSTR
+	CON(5)	41
+	NIBASC	\En espera de datos\
+	CON(5)	=Msg
+	CON(5)	=DOBINT
+	CON(5)	5
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	117
+	CON(5)	=DOCOL
+	CON(5)	=DBox
+	CON(5)	=DOCSTR
+	CON(5)	37
+	NIBASC	\Guardar Tramo #?\
+	CON(5)	=DLine1
+* Tramo sugerido 
+	CON(5)	=SINPUT
+	CON(5)	=TDATA
+	CON(5)	=LENCOMP
+* -> # 
+	CON(5)	=DUP#0=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROPONE
+	CON(5)	=SEMI
+	CON(5)	=#1+
+	CON(5)	=#>$
+	CON(5)	=&$
+* $ #->$' 
+	CON(5)	=SINPUT!
+	CON(5)	=DOBINT
+	CON(5)	4
+	CON(5)	=MODE!
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	4
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	132
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+* Convierto a Entero 
+	CON(5)	=STR2
+	CON(5)	=%IP
+* $ -> % 
+* q el tramo no sea > de 100 
+	CON(5)	=DUP
+	CON(5)	=%100
+	CON(5)	=%<
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+	CON(5)	=TDATA
+* RCL Tramos 
+	CON(5)	=ROT2DUP
+* -> T {} N {} N 
+	CON(5)	=SWAP
+	CON(5)	=DUPNULL{}?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=2DROP
+	CON(5)	=TRUE
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=INNERDUP
+	CON(5)	=#2+ROLL
+	CON(5)	=SWAPTRUE
+	CON(5)	=SWAP
+* {} {} %T F #N F 
+	CON(5)	=DO
+	CON(5)	=ROT
+	CON(5)	=INCOMPDROP
+	CON(5)	=DROP
+	CON(5)	=3PICK
+	CON(5)	=%=
+	CON(5)	=IT
+	CON(5)	=NOT
+	CON(5)	=LOOP
+	CON(5)	=SWAPDROP
+	CON(5)	=SEMI
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DBox
+	CON(5)	=DOCSTR
+	CON(5)	25
+	NIBASC	\Guardando\
+	CON(2)	#1F
+	CON(5)	=DLine1
+* Empaqueto 
+	CON(5)	=TKI
+	CON(5)	=TVL
+	CON(5)	=THI
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	={}N
+	CON(5)	=TWO{}N
+* -> {R{R R R}} 
+	CON(5)	=>TCOMP
+* Anexo tramo a Data 
+	CON(5)	=DUPDUP
+* DATA TDATA 
+	CON(5)	=INNERCOMP
+* Preparo para 
+	CON(5)	=reversym
+* DoVTIME 
+	CON(5)	=TINIT
+	CON(5)	=ONE{}N
+* Init VTIME 
+	CON(5)	=DoVTIM
+* CalcVTIME 
+	CON(5)	=VTIME!
+* Save Time Input 
+	CON(5)	=TDATA!
+* Save temp data 
+	CON(5)	=SWAP
+* Traigo Tag 
+	CON(5)	=SaveT
+* Save Data 
+	CON(5)	=DOBINT
+	CON(5)	5
+	CON(5)	=MODE!
+	CON(5)	=DOCSTR
+	CON(5)	35
+	NIBASC	\Tramo Guardado!\
+	CON(5)	=DOCSTR
+	CON(5)	27
+	NIBASC	\Pulse ENTER\
+	CON(5)	=Msg
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=3DROP
+	CON(5)	=DOCSTR
+	CON(5)	43
+	NIBASC	\Ya existe el tramo!\
+	CON(5)	=DLine2
+	CON(5)	=DOCSTR
+	CON(5)	27
+	NIBASC	\Pulse ENTER\
+	CON(5)	=DLine3
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=MODE!
+	CON(5)	=DoBadKey
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DBKey
+* Trm>100 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	5
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	216
+	CON(5)	=DOCOL
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClearBuffer 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* InitMode 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* Restore LCD 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VISUAL!
+* VisualModeRun 
+
+	CON(5)	=FALSE
+* ViewMode 
+	CON(5)	=DOBINT
+	CON(5)	3
+* Pos VectMode 
+	CON(5)	=SetMenu
+* VectMode 
+	CON(5)	=PUTLIST
+* Store Flag 
+	CON(5)	=SetMenu!
+* Save VectFlag 
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\VIEW\
+* RestoreVLabel 
+	CON(5)	=DoLabel
+* SetLabel 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	6
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	232
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+	CON(5)	=STR2
+* Extract Buff 
+	CON(5)	=TINIT!
+* Save TINIT 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* Init MODE 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* Clr Buffer 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* RestoreLCD 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VISUAL!
+* RunVisual 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=Frm1!
+* UpdateDispFrm 
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	247
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+	CON(5)	=STR2
+* Extract Buff 
+	CON(5)	=DUP
+* Verificacion 
+	CON(5)	=%100
+	CON(5)	=%<
+* Si esta entre 
+	CON(5)	=SWAPDUP
+* 100 y 
+	CON(5)	=%100
+	CON(5)	=%CHS
+* -100  
+	CON(5)	=%>
+	CON(5)	=ROTAND
+* seguir 
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=KI!
+* Save TINIT 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* Init MODE 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* Clr Buffer 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* RestoreLCD 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VISUAL!
+* RunVisual 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=Frm1!
+* UpdateDispFrm 
+	CON(5)	=SEMI
+	CON(5)	=DBKey
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	8
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	271
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+	CON(5)	=STR2
+* Extract Buff 
+	CON(5)	=VEL!
+* Save TINIT 
+	CON(5)	=TOUT
+	CON(5)	=HI!
+* Ajute Tiempo 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* Init MODE 
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* Clr Buffer 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* RestoreLCD 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VISUAL!
+* RunVisual 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=Frm1!
+* UpdateDispFrm 
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	10
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	287
+	CON(5)	=DoBadKey
+	CON(5)	=DOBINT
+	CON(5)	11
+	CON(5)	=#=casedrop
+* File	D:\devel\HP\devel\NAV48\EnterKey.h	289
+	CON(5)	=DOCOL
+	CON(5)	=DBox
+* Redraw 
+	CON(5)	=DOCSTR
+	CON(5)	23
+	NIBASC	\Borrando\
+	CON(2)	#1F
+* Disp Msg 
+	CON(5)	=DLine1
+* Line2 
+	CON(5)	=TDATA
+* TempData 
+	CON(5)	=INNERCOMP
+	CON(5)	=reversym
+* invierto 
+	CON(5)	=VTRM
+	CON(5)	=#1+ROLL
+* Borro el 
+	CON(5)	=DROP#1-
+* trm y decremento 
+	CON(5)	=reversym
+* ArmoData 
+	CON(5)	={}N
+	CON(5)	=DUPDUP
+	CON(5)	=TDATA!
+* SaveTempData 
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+* TAG Data 
+	CON(5)	=SaveT
+* SaveData 
+	CON(5)	=VTRM
+	CON(5)	=#1-
+	CON(5)	=VTRM!
+	CON(5)	=DUPNULL{}?
+* DATA Vacia? 
+	CON(5)	=ITE
+* -> 
+	CON(5)	=VTIME!
+* Reset VTIME 
+	CON(5)	=DROP
+* DropList 
+	CON(5)	=DOCSTR
+	CON(5)	33
+	NIBASC	\TRAMO BORRADO!\
+* +Msg 
+	CON(5)	=NULL$
+	CON(5)	=Msg
+* DEL Msg 
+	CON(5)	=DOBINT
+	CON(5)	5
+	CON(5)	=MODE!
+* OUT Mode 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=TRMA!
+* ForceUpdate 
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+
+*|| Resuming file KEY.H at line 191
+	CON(5)	=DOBINT
+	CON(5)	25
+*********************************
+* File	KEY.H	194
+* KeyUp 
+	CON(5)	=DOCOL
+	CON(5)	=VTRM
+	CON(5)	=#0=?SEMI
+	CON(5)	=VTRM
+	CON(5)	=#1-DUP
+	CON(5)	=#0=ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+	CON(5)	=DUP
+	CON(5)	=VTRM!
+	CON(5)	=TDATA
+	CON(5)	=SWAP
+	CON(5)	=ViewTr
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	11
+*********************************
+* File	KEY.H	206
+* KeyFastUp 
+	CON(5)	=DOCOL
+	CON(5)	=VTRM
+	CON(5)	=#0=?SEMI
+	CON(5)	=VTRM
+	CON(5)	=DOBINT
+	CON(5)	4
+	CON(5)	=UNCOERCE2
+	CON(5)	=%-
+	CON(5)	=DUP
+	CON(5)	=%0
+	CON(5)	=%<=
+	CON(5)	=ITE
+	CON(5)	=DROPONE
+	CON(5)	=COERCE
+	CON(5)	=DUP
+	CON(5)	=VTRM!
+	CON(5)	=TDATA
+	CON(5)	=SWAP
+	CON(5)	=ViewTr
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	16
+*********************************
+* File	KEY.H	222
+* KeyDown 
+	CON(5)	=DOCOL
+	CON(5)	=VTRM
+	CON(5)	=#0=?SEMI
+	CON(5)	=VTRM
+	CON(5)	=#1+DUP
+	CON(5)	=TDATA
+	CON(5)	=LENCOMP
+	CON(5)	=#>ITE
+	CON(5)	=DBKey
+	CON(5)	=DOCOL
+	CON(5)	=DUP
+	CON(5)	=VTRM!
+	CON(5)	=TDATA
+	CON(5)	=SWAP
+	CON(5)	=ViewTr
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	17
+*********************************
+* File	KEY.H	235
+* KeyFastDown 
+	CON(5)	=DOCOL
+	CON(5)	=VTRM
+	CON(5)	=#0=?SEMI
+	CON(5)	=VTRM
+	CON(5)	=#4+
+	CON(5)	=TDATA
+	CON(5)	=LENCOMP
+	CON(5)	=2DUP
+	CON(5)	=#>ITE
+	CON(5)	=SWAPDROP
+	CON(5)	=DROP
+	CON(5)	=DUP
+	CON(5)	=VTRM!
+	CON(5)	=TDATA
+	CON(5)	=SWAP
+	CON(5)	=ViewTr
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	18
+*********************************
+* File	KEY.H	251
+* Drop 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+	CON(5)	=#0=
+	CON(5)	=NOT?SEMI
+	CON(5)	=SINPUT
+	CON(5)	=DelCR
+	CON(5)	=SINPUT!
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	29
+*********************************
+* File	KEY.H	259
+* INV 
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+* Buffer 
+	CON(5)	=CHR_-
+	CON(5)	=CHR>$
+* $- 
+	CON(5)	=SWAP&$
+* $' 
+	CON(5)	=SINPUT!
+* ->Buffer 
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	26
+*********************************
+* File	KEY.H	268
+* Del 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+	CON(5)	=#0=
+	CON(5)	=NOT?SEMI
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	28
+*********************************
+* File	KEY.H	276
+* Quit 
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+	CON(5)	=#0=ITE
+	CON(5)	=DOCOL
+	CON(5)	=NULL$
+	CON(5)	=SINPUT!
+* ClearBuffer 
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=MODE!
+* InitMode 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* Restore LCD 
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=VISUAL!
+* VisualModeRun 
+
+	CON(5)	=FALSE
+* ViewMode 
+	CON(5)	=DOBINT
+	CON(5)	3
+* Pos VectMode 
+	CON(5)	=SetMenu
+* VectMode 
+	CON(5)	=PUTLIST
+* Store Flag 
+	CON(5)	=SetMenu!
+* Save VectFlag 
+	CON(5)	=DOBINT
+	CON(5)	22
+	CON(5)	=DOCSTR
+	CON(5)	13
+	NIBASC	\VIEW\
+* RestoreVLabel 
+	CON(5)	=DoLabel
+* SetLabel 
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=DOLCD>
+* DumpScreen 
+	CON(5)	=TLCD!
+* BkpLcd 
+	CON(5)	=DBox
+* RedrawBox 
+	CON(5)	=DOCSTR
+	CON(5)	29
+	NIBASC	\Desea Salir?\
+	CON(5)	=DOCSTR
+	CON(5)	27
+	NIBASC	\SALIR=ENTER\
+	CON(5)	=Msg
+* Msg Confirm 
+	CON(5)	=WaitForKey
+* Espera ENTER 
+	CON(5)	=DROP
+* drop SHIFT 
+	CON(5)	=TLCD
+	CON(5)	=2LCD
+* RestoreLCD 
+	CON(5)	=DOBINT
+	CON(5)	25
+* -> Bit Bit 
+	CON(5)	=#=
+	CON(5)	=NOT?SEMI
+* KeyEnter? 
+	CON(5)	=TRUE
+* Si=Salir 
+	CON(5)	=Running!
+* RUN Var 
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DOBINT
+	CON(5)	6
+*********************************  
+* NUMEROS			*
+*********************************
+* File	KEY.H	315
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\0\
+	CON(5)	=DOBINT
+	CON(5)	46
+* File	KEY.H	316
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\1\
+	CON(5)	=DOBINT
+	CON(5)	41
+* File	KEY.H	317
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\2\
+	CON(5)	=DOBINT
+	CON(5)	42
+* File	KEY.H	318
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\3\
+	CON(5)	=DOBINT
+	CON(5)	43
+* File	KEY.H	319
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\4\
+	CON(5)	=DOBINT
+	CON(5)	36
+* File	KEY.H	320
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\5\
+	CON(5)	=DOBINT
+	CON(5)	37
+* File	KEY.H	321
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\6\
+	CON(5)	=DOBINT
+	CON(5)	38
+* File	KEY.H	322
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\7\
+	CON(5)	=DOBINT
+	CON(5)	31
+* File	KEY.H	323
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\8\
+	CON(5)	=DOBINT
+	CON(5)	32
+* File	KEY.H	324
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\9\
+	CON(5)	=DOBINT
+	CON(5)	33
+* File	KEY.H	325
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\.\
+	CON(5)	=DOBINT
+	CON(5)	47
+* File	KEY.H	326
+	CON(5)	=SEMI
+
+
+	CON(5)	=DUPUNROT
+	CON(5)	=NTHOF
+* Busco Tecla 
+	CON(5)	=DUP#0=ITE
+* Si es 0, 
+	CON(5)	=DOCOL
+	CON(5)	=2DROP
+	CON(5)	=DoBadKey
+	CON(5)	=SEMI
+* Tecla invalida -> out 
+	CON(5)	=DOCOL
+	CON(5)	=#1-
+	CON(5)	=NTHCOMPDROP
+	CON(5)	=DUPTYPECSTR?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=VISUAL
+	CON(5)	=#0=ITE
+	CON(5)	=DOCOL
+	CON(5)	=SINPUT
+	CON(5)	=DUPLEN$
+	CON(5)	=DOBINT
+	CON(5)	10
+	CON(5)	=#>ITE
+	CON(5)	=DOCOL
+	CON(5)	=2DROP
+	CON(5)	=DoBadKey
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=SWAP&$
+	CON(5)	=SINPUT!
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+	CON(5)	=DROP
+	CON(5)	=SEMI
+	CON(5)	=EVAL
+	CON(5)	=SEMI
+
+	CON(5)	=VISUAL
+	CON(5)	=#0=
+	CON(5)	=NOT?SEMI
+	CON(5)	=SINPUT
+	CON(5)	=MODE
+	CON(5)	=#3=
+	CON(5)	=ITE
+	CON(5)	=DROP
+	CON(5)	=DLine3
+	CON(5)	=SEMI
+

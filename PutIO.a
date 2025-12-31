@@ -1,0 +1,63 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\PutIO.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file PutIO.h at line 4
+
+* PutIO 
+
+	CON(5)	=Send?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=editdecomp$w
+* ->string 
+	CON(5)	=DUPLEN$
+* Format to 
+	CON(5)	=DOBINT
+	CON(5)	6
+	CON(5)	=SWAP#-
+* 7 Chars 
+	CON(5)	=Blank$
+	CON(5)	=SWAP&$
+	CON(5)	=SSEND!
+* $ to Send 
+	CON(5)	=FALSE
+	CON(5)	=Send?!
+* Wait to Send 
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+* Drop %Diff 
+	CON(5)	=SSEND
+* $TOSEND 
+	CON(5)	=DUPNULL$?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DROPTRUE
+	CON(5)	=Send?!
+	CON(5)	=NEWLINE$
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=DUPTWO
+	CON(5)	=LAST$
+	CON(5)	=SSEND!
+	CON(5)	=ONEONE
+	CON(5)	=SUB$
+	CON(5)	=SEMI
+	CON(5)	=OpenIO
+* Send String 
+	CON(5)	=ERRSET
+	CON(5)	=PUTSERIAL
+	CON(5)	=ERRTRAP
+	CON(5)	=DOCOL
+	CON(5)	=SEMI
+	CON(5)	=DROP
+	CON(5)	=SEMI
+

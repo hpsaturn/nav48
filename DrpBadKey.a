@@ -1,0 +1,41 @@
+* File	DrpBadKey.s	1
+* RPL
+* File	DrpBadKey.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\DrpBadKey.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	DrpBadKey.s	3
+
+* File	DrpBadKey.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file DrpBadKey.s at line 4
+
+* DrpBKey 
+*********************************
+* Sonido para tecla invalida 	*
+*********************************
+* File	DrpBadKey.s	10
+=DBKey
+* File	DrpBadKey.s	11
+	CON(5)	=DOCOL
+* File	DrpBadKey.s	12
+	CON(5)	=DROP
+* File	DrpBadKey.s	13
+	CON(5)	=DoBadKey
+* File	DrpBadKey.s	14
+	CON(5)	=SEMI
+* File	DrpBadKey.s	15
+

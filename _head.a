@@ -1,0 +1,17 @@
+* ROMPART 200 header
+
+=ROMID200	EQU	#200
+	CON(5)	=DOLIB
+=LIB200
+	REL(5)	=SYSEND200
+	CON(2)	45
+	NIBASC	\NAV48 :Hpsaturn Navi\
+	NIBASC	\gator, Build PC v1.0\
+	NIBASC	\ Beta\
+	CON(2)	45
+=SYS200	CON(3)	#200
+	REL(5)	=HasH200
+	REL(5)	=Messages
+	REL(5)	=LinK200
+	REL(5)	=CONFIG
+	END

@@ -1,0 +1,218 @@
+* File	BigGrob.s	1
+* RPL
+* File	BigGrob.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\BigGrob.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	BigGrob.s	3
+
+* File	BigGrob.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file BigGrob.s at line 4
+
+* BigGrob 
+*********************************
+* Programa para agrandar las 	*
+* fuentes			*
+* grob -> grob* 		*
+*********************************
+* File	BigGrob.s	12
+=2BGROB
+* File	BigGrob.s	13
+	CON(5)	=DOCOL
+* File	BigGrob.s	14
+	CON(5)	=DUPGROBDIM
+* File	BigGrob.s	15
+	CON(5)	=#2*
+* File	BigGrob.s	16
+	CON(5)	=SWAP
+* File	BigGrob.s	17
+	CON(5)	=#2*
+* File	BigGrob.s	18
+	CON(5)	=SWAP
+* File	BigGrob.s	19
+	CON(5)	=MAKEGROB
+* File	BigGrob.s	20
+	CON(5)	=SWAP
+* File	BigGrob.s	21
+* CODE
+	CON(5)	=DOCODE
+	REL(5)	LBL000
+* File	BigGrob.s	22
+	GOSBVL	=PopASavptr
+* File	BigGrob.s	23
+	LC(5)	#14
+* File	BigGrob.s	24
+	D0=A
+* File	BigGrob.s	25
+	A=A+C	A
+* File	BigGrob.s	26
+	R2=A
+* File	BigGrob.s	27
+	D0=D0+	15
+* File	BigGrob.s	28
+	A=DAT0	A
+* File	BigGrob.s	29
+	GOSBVL	=w->W
+* File	BigGrob.s	30
+	R3=A
+* File	BigGrob.s	31
+	D0=D0-	5
+* File	BigGrob.s	32
+	A=DAT0	A
+* File	BigGrob.s	33
+	R4=A
+* File	BigGrob.s	34
+	A=DAT1	A
+* File	BigGrob.s	35
+	D0=A
+* File	BigGrob.s	36
+	A=A+C	A
+* File	BigGrob.s	37
+	R0=A
+* File	BigGrob.s	38
+	D0=D0+	15
+* File	BigGrob.s	39
+	A=DAT0	A
+* File	BigGrob.s	40
+	GOSBVL	=w->W
+* File	BigGrob.s	41
+	R1=A
+* File	BigGrob.s	42
+	C=R4
+* File	BigGrob.s	43
+	D=C	A
+* File	BigGrob.s	44
+L81B5B
+* File	BigGrob.s	45
+	D=D-1	A
+* File	BigGrob.s	46
+	GONC	L81B67
+* File	BigGrob.s	47
+	GOVLNG	=GETPTRLOOP
+* File	BigGrob.s	48
+L81B67
+* File	BigGrob.s	49
+	P=	14
+* File	BigGrob.s	50
+	A=R0
+* File	BigGrob.s	51
+L81B6C
+* File	BigGrob.s	52
+	D1=A
+* File	BigGrob.s	53
+	A=R2
+* File	BigGrob.s	54
+	D0=A
+* File	BigGrob.s	55
+	A=R1
+* File	BigGrob.s	56
+	B=A	A
+* File	BigGrob.s	57
+L81B7A
+* File	BigGrob.s	58
+	B=B-1	A
+* File	BigGrob.s	59
+	GOC	L81BDD
+* File	BigGrob.s	60
+	A=DAT0	B
+* File	BigGrob.s	61
+	C=0	A
+* File	BigGrob.s	62
+	?ABIT=0	3
+* File	BigGrob.s	63
+	GOYES	L81B95
+* File	BigGrob.s	64
+	CBIT=1	7
+* File	BigGrob.s	65
+	CBIT=1	6
+* File	BigGrob.s	66
+L81B95
+* File	BigGrob.s	67
+	?ABIT=0	2
+* File	BigGrob.s	68
+	GOYES	L81BA6
+* File	BigGrob.s	69
+	CBIT=1	5
+* File	BigGrob.s	70
+	CBIT=1	4
+* File	BigGrob.s	71
+L81BA6
+* File	BigGrob.s	72
+	?ABIT=0	1
+* File	BigGrob.s	73
+	GOYES	L81BB7
+* File	BigGrob.s	74
+	CBIT=1	3
+* File	BigGrob.s	75
+	CBIT=1	2
+* File	BigGrob.s	76
+L81BB7
+* File	BigGrob.s	77
+	?ABIT=0	0
+* File	BigGrob.s	78
+	GOYES	L81BC8
+* File	BigGrob.s	79
+	CBIT=1	1
+* File	BigGrob.s	80
+	CBIT=1	0
+* File	BigGrob.s	81
+L81BC8
+* File	BigGrob.s	82
+	DAT1=C	1
+* File	BigGrob.s	83
+	B=B-1	A
+* File	BigGrob.s	84
+	GOC	L81BDD
+* File	BigGrob.s	85
+	DAT1=C	B
+* File	BigGrob.s	86
+	D0=D0+	1
+* File	BigGrob.s	87
+	D1=D1+	2
+* File	BigGrob.s	88
+	GONC	L81B7A
+* File	BigGrob.s	89
+L81BDD
+* File	BigGrob.s	90
+	A=R0
+* File	BigGrob.s	91
+	C=R1
+* File	BigGrob.s	92
+	A=A+C	A
+* File	BigGrob.s	93
+	R0=A
+* File	BigGrob.s	94
+	P=P+1
+* File	BigGrob.s	95
+	GONC	L81B6C
+* File	BigGrob.s	96
+	A=R2
+* File	BigGrob.s	97
+	C=R3
+* File	BigGrob.s	98
+	A=A+C	A
+* File	BigGrob.s	99
+	R2=A
+* File	BigGrob.s	100
+	GOTO	L81B5B
+* File	BigGrob.s	101
+* ENDCODE
+LBL000
+* File	BigGrob.s	102
+	CON(5)	=SEMI
+* File	BigGrob.s	103
+

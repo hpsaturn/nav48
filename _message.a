@@ -1,0 +1,25 @@
+* Message table of the project D:\devel\HP\work\NAV48\NAV48.HPP
+* File	_message.s	2
+* File	_message.s	3
+	ABASE	#20004
+* File	_message.s	4
+* File	_message.s	5
+=Messages
+	CON(5)	=DOARRY
+	REL(5)	LBL000
+	CON(5)	=DOCSTR
+	CON(5)	1
+	CON(5)	3
+* File	_message.s	6
+	CON(5)	71
+	NIBASC	\Sistema de Navegacio\
+	NIBASC	\n para Rally.\
+* File	_message.s	7
+	CON(5)	51
+	NIBASC	\Version compilada en\
+	NIBASC	\ PC\
+* File	_message.s	8
+	CON(5)	37
+	NIBASC	\Beta Testing 1.0\
+* File	_message.s	9
+LBL000

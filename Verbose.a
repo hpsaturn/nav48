@@ -1,0 +1,207 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Verbose.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file Verbose.h at line 4
+
+* Verbose 
+
+	CON(5)	=DOCOL
+	CON(5)	=TOD
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	78
+	CON(5)	=DOBINT
+	CON(5)	20
+	CON(5)	=IFNT2
+
+	CON(5)	=DUPTYPEREAL?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=editdecomp$w
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=Expnd$
+* Format Str 
+	CON(5)	=2FNT2
+	CON(5)	=2BGROB
+	CON(5)	=DOBINT
+	CON(5)	84
+	CON(5)	=DOBINT
+	CON(5)	17
+	CON(5)	=ROT
+	CON(5)	=FillG
+	CON(5)	=SEMI
+	CON(5)	=DROP
+
+	CON(5)	=DUPTYPEREAL?
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=editdecomp$w
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=Expnd$
+* Format Str 
+	CON(5)	=DOBINT
+	CON(5)	75
+	CON(5)	=DOBINT
+	CON(5)	28
+	CON(5)	=DFNT2
+	CON(5)	=SEMI
+	CON(5)	=DROP
+
+	CON(5)	=editdecomp$w
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=Expnd$
+* Format Str 
+	CON(5)	=DOBINT
+	CON(5)	75
+	CON(5)	=DOBINT
+	CON(5)	36
+	CON(5)	=DFNT2
+
+	CON(5)	=TOUT
+	CON(5)	=TOD
+	CON(5)	=%HMS-
+	CON(5)	=DUP
+	CON(5)	=%0<
+* es negativo? 
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=%CHS
+	CON(5)	=TOD>t$
+	CON(5)	=%1
+	CON(5)	=DOCSTR
+	CON(5)	7
+	NIBASC	\-\
+	CON(5)	=SREPL
+	CON(5)	=SEMI
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	78
+	CON(5)	=DOBINT
+	CON(5)	47
+	CON(5)	=IFNT2
+
+
+	CON(5)	=Frm1
+	CON(5)	=#0=
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=DOBINT
+	CON(5)	1
+	CON(5)	=Frm1!
+	CON(5)	=DOBINT
+	CON(5)	2
+	CON(5)	=DOFIX
+* Aprox FIX 2 
+	CON(5)	=DOBINT
+	CON(5)	17
+	CON(5)	=DOBINT
+	CON(5)	26
+	CON(5)	=MAKEGROB
+* BlankG 
+	CON(5)	=ABUFF
+	CON(5)	=DOBINT
+	CON(5)	99
+	CON(5)	=DOBINT
+	CON(5)	0
+	CON(5)	=GROB!
+* Clear 
+	CON(5)	=VEL
+* Disp 
+	CON(5)	=DOBINT
+	CON(5)	130
+	CON(5)	=DOBINT
+	CON(5)	6
+	CON(5)	=DFNT1
+* Vel 
+
+	CON(5)	=KI
+	CON(5)	=DOBINT
+	CON(5)	130
+	CON(5)	=DOBINT
+	CON(5)	12
+	CON(5)	=DFNT1
+
+	CON(5)	=TRMA
+	CON(5)	=#>$
+	CON(5)	=DOBINT
+	CON(5)	130
+	CON(5)	=DOBINT
+	CON(5)	18
+	CON(5)	=DFNT1
+
+	CON(5)	=HI
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	78
+	CON(5)	=DOBINT
+	CON(5)	31
+	CON(5)	=IFNT2
+
+	CON(5)	=TOUT
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	78
+	CON(5)	=DOBINT
+	CON(5)	39
+	CON(5)	=IFNT2
+
+	CON(5)	=TINIT
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	39
+	CON(5)	=DOBINT
+	CON(5)	49
+	CON(5)	=IFNT1
+	CON(5)	=DOBINT
+	CON(5)	3
+	CON(5)	=DOFIX
+* AproxFix3 
+	CON(5)	=TRMA
+* Tramo Actual 
+	CON(5)	=#0=?SEMI
+* Verificacion 
+	CON(5)	=TDATA
+* TempData 
+	CON(5)	=TRMA
+* {} T# 
+	CON(5)	=NTHCOMPDROP
+* {R{}} 
+	CON(5)	=INCOMPDROP
+* R{} 
+	CON(5)	=INCOMPDROP
+* N N N N 
+	CON(5)	=TOD>t$
+	CON(5)	=DOBINT
+	CON(5)	39
+	CON(5)	=DOBINT
+	CON(5)	43
+	CON(5)	=IFNT1
+	CON(5)	=DROP
+* Drop%V 
+	CON(5)	=editdecomp$w
+	CON(5)	=DOBINT
+	CON(5)	7
+	CON(5)	=Expnd$
+* Format Str 
+	CON(5)	=DOBINT
+	CON(5)	75
+	CON(5)	=DOBINT
+	CON(5)	43
+	CON(5)	=DFNT1
+	CON(5)	=DROP
+	CON(5)	=SEMI
+* fin Frame 1 
+	CON(5)	=SEMI
+* Fin Verbose 
+

@@ -1,0 +1,35 @@
+* File	_config.s	1
+* RPL
+* File	_config.s	2
+
+* File	_config.s	3
+*|| Reading from D:\devel\HP\work\NAV48\NAV48.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file _config.s at line 3
+
+=CONFIG
+* File	_config.s	7
+	CON(5)	=DOCOL
+* File	_config.s	8
+	CON(5)	=HOMEDIR
+	CON(5)	=DOBINT
+	CON(5)	#200
+	CON(5)	=XEQSETLIB
+* File	_config.s	9
+	CON(5)	=SEMI
+* File	_config.s	10
+

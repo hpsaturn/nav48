@@ -1,0 +1,72 @@
+* File	DoVTime.s	1
+* RPL
+* File	DoVTime.s	2
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\DoVTime.s, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+* File	DoVTime.s	3
+
+* File	DoVTime.s	4
+*|| Reading from D:\devel\HP\work\NAV48\prueba.h
+
+=RomId	EQU	#200
+* ROMID set to 200
+
+
+
+
+
+
+
+
+
+
+
+
+*|| Resuming file DoVTime.s at line 4
+
+* DoVTIM 
+*********************************
+* CALCULO DE VTIME		*
+* {}{}{} #N {} -> {}		* 
+*********************************
+* File	DoVTime.s	11
+
+* File	DoVTime.s	12
+=DoVTIM
+* File	DoVTime.s	13
+	CON(5)	=DOCOL
+* File	DoVTime.s	14
+	CON(5)	=SWAP
+* File	DoVTime.s	15
+	CON(5)	=#1+_ONE_DO
+* File	DoVTime.s	16
+	CON(5)	=SWAP
+* File	DoVTime.s	17
+* Saco Tiempo del tramo 
+* File	DoVTime.s	18
+	CON(5)	=INCOMPDROP
+* Tramo
+* File	DoVTime.s	19
+	CON(5)	=INCOMPDROP
+* valores 
+* File	DoVTime.s	20
+	CON(5)	=4UNROLL3DROP
+* File	DoVTime.s	21
+* {vtime} %T -> 
+* File	DoVTime.s	22
+	CON(5)	=SWAPINCOMP
+* File	DoVTime.s	23
+	CON(5)	=DUP
+	CON(5)	=#2+ROLL
+* File	DoVTime.s	24
+	CON(5)	=3PICK
+	CON(5)	=%HMS+
+* File	DoVTime.s	25
+	CON(5)	=SWAP
+	CON(5)	=#1+
+	CON(5)	={}N
+* File	DoVTime.s	26
+	CON(5)	=LOOP
+* File	DoVTime.s	27
+	CON(5)	=SEMI
+* File	DoVTime.s	28
+

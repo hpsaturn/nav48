@@ -1,0 +1,108 @@
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\InitData.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005  
+
+*|| Reading from D:\devel\HP\devel\NAV48\Def.h
+* RPL
+* C:\Archivos de programa\Hewlett-Packard\Debug4x\Examples\Rally\Deft.h, part of the saturn.HPP project, created by <Hpsaturn> on 15/05/2005 
+
+* Def 
+
+
+
+*|| Resuming file InitData.h at line 4
+
+* InitData 
+
+	CON(5)	=DATE
+	CON(5)	=Date>d$
+* Fecha de $data 
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	12
+	NIBASC	\PControl.dat\
+	CON(5)	=DUP
+* Tag PCtrlData 
+	CON(5)	=TRCLF
+* Saco Data 
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=NEWLINE$&$
+	CON(5)	=ROT
+	CON(5)	=&$SWAP
+	CON(5)	=SaveT
+	CON(5)	=SEMI
+	CON(5)	=SaveT
+
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+	CON(5)	=TRCLF
+* Trms Data 
+	CON(5)	=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DUPNULL{}?
+	CON(5)	=ITE
+	CON(5)	=DROPFALSE
+	CON(5)	=TRUE
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=NULL{}
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+	CON(5)	=TSTO
+	CON(5)	=FALSE
+	CON(5)	=SEMI
+	CON(5)	=IT
+	CON(5)	=DOCOL
+	CON(5)	=DOCSTR
+	CON(5)	37
+	NIBASC	\Recargar Tramos?\
+	CON(5)	=DOCSTR
+	CON(5)	21
+	NIBASC	\ENTER=OK\
+	CON(5)	=Msg
+	CON(5)	=WaitForKey
+	CON(5)	=DROP
+	CON(5)	=DOBINT
+	CON(5)	25
+* File	InitData.h	39
+	CON(5)	=#=ITE
+	CON(5)	=DOCOL
+	CON(5)	=DOCSTR
+	CON(5)	27
+	NIBASC	\Recargando\
+	CON(2)	#1F
+	CON(5)	=NULL$
+	CON(5)	=Msg
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+* File	InitData.h	44
+	CON(5)	=SaveT
+	CON(5)	=SEMI
+	CON(5)	=DOCOL
+	CON(5)	=DROP
+	CON(5)	=NULL{}
+	CON(5)	=DOTAG
+	CON(2)	1
+	NIBASC	\5\
+	CON(5)	=DOIDNT
+	CON(2)	10
+	NIBASC	\Tramos.dat\
+* File	InitData.h	50
+	CON(5)	=SaveT
+	CON(5)	=SEMI
+	CON(5)	=SEMI
+
