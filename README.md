@@ -1,21 +1,3 @@
----
-layout: post
-title:  "Nav48 - Rally Terratrip"
-imghead: nav48_collage.jpg
-date:   2004-01-01
-excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller."
-post: https://hpsaturn.com/terratrip/
-project: true
-tag:
-- Assembler
-- C++
-- IoT
-- Hp48
-- Hardware
-- Motorola
-comments: false
----
-
 # Nav48
 
 Rally computer for amateur and professional rally teams. Using a Hp48 calculator, the rally team enter the race variables (navegation route challange) and the software give the next information:
