@@ -51,4 +51,4 @@ With this hardware and software, my team won around 8 trophies and two champions
 ## Credits
 
 - Alberto Solano: First pilot and sponsor to make the original idea of try to implement this software and hardare
-- Alejandro Pilioneta: Pilot and sponsor of this project
+- Alejandro Pilonieta: Pilot and sponsor of this project
